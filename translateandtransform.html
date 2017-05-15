@@ -1,0 +1,94 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Translate/Transform Animation</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Playfair+Display|Raleway" rel="stylesheet">
+
+<!-- <style media="screen"> or <style> either one works-->
+    <style>
+    .explanation {
+      position: absolute;
+      left: 100px;
+      padding-right: 500px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 40px;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    p {
+      font-family: 'Raleway', sans-serif;
+    }
+
+    #heavy{
+      background: lightgray;
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      line-height: 100px;
+      font-family: 'Monoton', cursive;
+      font-size:185px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: 50px;
+      left: 100px;
+      z-index: -1;
+    }
+
+
+    #heavy:hover{
+      animation-name: move;
+      animation-duration: 20s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+
+    @keyframes move {
+      0% {
+         transform: translateX(0px)}
+      25% {height: 250px; width: 250px;
+        transform: translateX(500px)}
+      50% {background: red; height: 300px; width: 300px;
+       transform: translateX(700px)}
+      75% {height: 350px; width: 350px;
+       transform: translateX(800px)}
+      100% {background: black; height: 400px; width: 400px;
+       transform: translateX(850px)}
+
+    }
+
+    </style>
+  </head>
+  <body>
+
+    <section class="explanation">
+      <h1>Translate/Transform Animation</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sprite.html">Sprite Animation</a></li>
+          <li><a href="transition.html">Transition Animation</a></li>
+          <li><a class="current" href="translateandtransform.html">Translate/Transform Animation</a></li>
+        </ul>
+      </nav>
+      <h2>"I keep dragging around what's bringing me down"</h2>
+      <p>For the translate/transform animation, I decided to use a circle that slowly transitions into the color red and eventually black to represent the craziness and darkness/heaviness that the person always carries. As the circle moves to the right, it gets larger and larger, while the O, which has many lines in it to portray complexity, remains the same. As the circle gets larger, it begins to slow because of all the weight it carries and eventually the O is engulfed in darkness.</p>
+    </section>
+
+    <div id="heavy">O</div>
+
+    <!--<div class="bounce">
+    </div>-->
+
+  </body>
+</html>

@@ -1,0 +1,123 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Transition Animation</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway|Rock+Salt" rel="stylesheet">
+
+    <style>
+
+    .explanation {
+      position: absolute;
+      left: 100px;
+      padding-right: 600px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 40px;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    p {
+      font-family: 'Raleway', sans-serif;
+    }
+
+    .four {
+      font-size: 140px;
+      position: absolute;
+      bottom: 50px;
+      right: 150px;
+      font-family: 'Rock Salt', cursive;
+    }
+
+    .one, .two, .three {
+      position: absolute;
+      bottom: 50px;
+      right: 150px;
+      font-family: 'Rock Salt', cursive;
+      font-size:150px;
+    }
+
+    div, span, strong {
+      transition: all 2s;
+      display: inline-block;
+    }
+
+    .one {
+      color: black;
+    }
+
+    .two {
+      color: gray;
+      z-index: -3;
+    }
+
+    .three {
+      color: lightgray;
+      z-index: -2;
+    }
+
+    .four {
+      color: pink;
+      z-index: -4;
+    }
+
+    html:hover .one {
+      color: white;
+    }
+
+    html:hover span {
+      transform: rotate(7200deg);
+      color: white;
+    }
+
+    html:hover strong {
+      transform: rotate(-3600deg);
+      color: white;
+    }
+
+    html:hover .two {
+      color: white;
+    }
+
+    html:hover .three {
+      color: white;
+    }
+
+    html:hover .four {
+      transform: translateX(-550px);
+      font-size: 200px;
+      color: red;
+    }
+
+    </style>
+  </head>
+  <body>
+
+
+    <div class="one">ooooo</div>
+    <div class="two"><span>x</span>x<span>x</span>x<span>x</span></div>
+    <div class="three">s<strong>s</strong>s<strong>s</strong>s</div>
+    <div class="four">crazy</div>
+
+    <section class="explanation">
+      <h1>Transition Animation</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sprite.html">Sprite Animation</a></li>
+            <li><a class="current" href="transition.html">Transition Animation</a></li>
+            <li><a href="translateandtransform.html">Translate/Transform Animation</a></li>
+          </ul>
+        </nav>
+      <h2>"And I drive myself crazy"</h2>
+      <p>For the transition animation, I wanted to create something hectic, so there are a bunch of letters all layered upon each other to create a sense of disarray. As the letters start spinning around and looking chaotic, the word "crazy" slides to the left and enlarges. I chose to make it transition to the color red because to me, red is very eye-catching and resembles craziness.</p>
+    </section>
+
+  </body>
+</html>

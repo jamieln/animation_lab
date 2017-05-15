@@ -1,0 +1,72 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sprite Animation</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
+  </head>
+  <style media="screen">
+
+  .explanation {
+    position: absolute;
+    left: 100px;
+    padding-right: 600px;
+  }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+  }
+
+  h2 {
+    font-family: 'Playfair Display', serif;
+  }
+
+  p {
+    font-family: 'Raleway', sans-serif;
+  }
+
+    #sprite{
+      /*border:1px solid black;*/
+      position: absolute;
+      bottom: 175px;
+      right: 150px;
+      height:400px; /*size of each individal image*/
+      width:400px;
+      background: url("img/universe.png") /*insert image file in ()*/ 0 0;
+      animation: universe 1s steps(6)/*dependent on number of frames*/ infinite;
+      animation-play-state: running;
+    }
+
+  @keyframes universe/*identifier*/{
+    100%{
+      background-position: 2400px; /*whole width of strip*/
+    }
+  }
+
+  </style>
+  <body>
+
+    <section class="explanation">
+      <h1>Sprite Animation</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="current" href="sprite.html">Sprite Animation</a></li>
+          <li><a href="transition.html">Transition Animation</a></li>
+          <li><a href="translateandtransform.html">Translate/Transform Animation</a></li>
+        </ul>
+      </nav>
+      <h2>"I know I'm not the center of the universe but you keep spinning 'round me just the same"</h2>
+      <p>For this sprite animation, I decided to do a more literal approach for the lyrics. I made a planet that is not centered within the square as well as within the orbit. The burgundy colored circle circles the planet.</p>
+    </section>
+
+    <div id="sprite"></div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
